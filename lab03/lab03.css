@@ -1,0 +1,182 @@
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 0.35fr;
+   grid-template-rows: 0.3fr 0.25fr 1fr 0.7fr;
+   grid-template-areas: "menu1 . menu2 menu2"
+   "blank blank blank blank"
+   "card1 card2 card3 aside"
+   "longcard longcard longcard aside";
+   grid-gap: 30px;
+   min-height: 100vh;
+}
+
+.menu1{
+  grid-area: menu1;
+  border: solid 1px #000;
+  margin-right: 100px;
+  background-color: mediumvioletred;
+}
+
+.menu2{
+  grid-area: menu2;
+  border: solid 1px #000;
+  background-color: yellow;
+}
+
+.blank{
+  grid-area: blank;
+}
+
+.card1 {
+  grid-area: card1;
+  border: solid 1px #000;
+  background-color: mediumturquoise;
+}
+
+.card2 {
+  grid-area: card2;
+  border: solid 1px #000;
+    background-color: mediumturquoise;
+}
+
+.card3 {
+  grid-area: card3;
+  border: solid 1px #000;
+  margin-right: 10px;
+    background-color: mediumturquoise;
+}
+
+.aside{
+  grid-area:aside;
+  border: solid 1px #000;
+  padding: 10px;
+  background-color: black;
+}
+
+.main{
+  grid-area: longcard;
+  border: solid 1px #000;
+  margin-right: 10px;
+  margin-top: 10px;
+    background-color: mediumturquoise;
+}
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+   .container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows:0.25fr 0.15fr 1.5fr 1fr .25fr;
+     grid-template-areas:"menu1 menu2"
+     "aside aside"
+     "card1 card2"
+     "card3 card3"
+     "longcard longcard";
+     grid-gap:25px;
+   }
+   .menu1{
+     grid-area: menu1;
+     border: solid 1px #000;
+     margin-right: 100px;
+     background-color: mediumvioletred;
+   }
+
+   .menu2{
+     grid-area: menu2;
+     border: solid 1px #000;
+     margin-left: -30px;
+     background-color: yellow;
+   }
+
+   .card1 {
+     grid-area: card1;
+     border: solid 1px #000;
+     background-color: mediumturquoise;
+   }
+
+   .card2 {
+     grid-area: card2;
+     border: solid 1px #000;
+       background-color: mediumturquoise;
+   }
+
+   .card3 {
+     grid-area: card3;
+     border: solid 1px #000;
+     background-color: mediumturquoise;
+     margin-right: 0px;
+   }
+
+   .aside{
+     grid-area:aside;
+     border: solid 1px #000;
+     background-color: black;
+   }
+
+   .main{
+     grid-area: longcard;
+     border: solid 1px #000;
+     background-color: mediumturquoise;
+     margin-right: 0px;
+   }
+
+}
+
+@media (min-width: 320px) and (max-width: 736px) {
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:0.2fr 0.15fr 1fr 1fr 1fr 2.5fr .6fr;
+    grid-template-areas:"menu1"
+    "menu2"
+    "card1"
+    "card2"
+    "card3"
+    "longcard"
+    "aside";
+    grid-gap:20px;
+  }
+  .menu1{
+    grid-area: menu1;
+    border: solid 1px #000;
+    padding-right: 300px;
+    background-color: mediumvioletred;
+  }
+
+  .menu2{
+    grid-area: menu2;
+    border: solid 1px #000;
+    background-color: yellow;
+  }
+
+  .card1 {
+    grid-area: card1;
+    border: solid 1px #000;
+    background-color: mediumturquoise;
+  }
+
+  .card2 {
+    grid-area: card2;
+    border: solid 1px #000;
+      background-color: mediumturquoise;
+  }
+
+  .card3 {
+    grid-area: card3;
+    border: solid 1px #000;
+    background-color: mediumturquoise;
+    margin-right: 0px;
+  }
+
+  .aside{
+    grid-area:aside;
+    border: solid 1px #000;
+    background-color: black;
+  }
+
+  .main{
+    grid-area: longcard;
+    border: solid 1px #000;
+    background-color: mediumturquoise;
+    margin-right: 0px;
+  }
+}
