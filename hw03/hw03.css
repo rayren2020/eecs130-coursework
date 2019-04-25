@@ -1,0 +1,257 @@
+/*color palette
+#FCD8C7-light pink
+#ECE4B7-vanilla
+#97E5CE-aquamarine
+#F79956-orange
+*/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+img {
+    height: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+body{
+  margin:0;
+  font-family: sans-serif;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 0.2fr 0.1fr 0.09fr 3fr;
+   grid-template-areas: "a"
+   "b"
+   "c"
+   "d"
+}
+
+.container1 {
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 0.2fr 0.1fr 0.09fr 3fr;
+   grid-template-areas: "a"
+   "b"
+   "c"
+   "d"
+}
+
+.container2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "a"
+  "b"
+  "c"
+  "d"
+  "e"
+}
+
+header, nav, .pagetitle,.cards2{
+  border:solid 1px black;
+}
+
+header{
+  grid-area: a;
+}
+
+nav{
+  grid-area: b;
+  margin-top: 0px;
+  background: #F79956;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  color:#FCD8C7;
+  margin-bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+span{
+  display: inline-block;
+  height: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+a{
+  color: black;
+}
+
+.pagetitle{
+  grid-area:c;
+}
+
+.cards{
+  grid-area: d;
+  font-family: 'Amatic SC';
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards section{
+  width:33.333% ;
+}
+
+.cards2{
+  grid-area: d;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards2 section{
+  width:33.333%;
+  padding-top:35px;
+}
+
+ul{
+    display: inline-block;
+    text-align:left;
+}
+
+.Category1{
+  background: #97E5CE;
+  padding-top: 1px;
+  padding-bottom: 30px;
+}
+
+.Category2{
+  background: #ECE4B7;
+  padding-top:1px;
+  padding-bottom: 30px;
+}
+
+h1{
+  margin-top: 0px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #FCD8C7;
+  margin-bottom: -5px;
+  font-family: 'Merriweather', serif;
+  font-size: 2.75em;
+}
+
+.webdesc{
+  font-style: italic;
+  font-family: 'Amatic SC', cursive;
+  margin-top: -10px;
+  background-color: #FCD8C7;
+  padding-top: 0.02px;
+  padding-bottom: 0.02px;
+  margin-bottom: -5px;
+  text-align: center;
+}
+
+#catlist{
+  margin-top: 0px;
+  font-size: 2em;
+  background-color: #FCD8C7;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top:15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#author{
+  background-color:  #FCD8C7;
+  font-family: 'Merriweather', serif;
+  padding-top:0px;
+  padding-bottom:10px;
+  text-align: center;
+}
+
+#mainstory{
+ grid-area: d;
+ line-height: 2em;
+ padding-top: 1px;
+ padding-left: 15px;
+ padding-right: 15px;
+ background-color: #ECE4B7;
+}
+
+#img1, #img2, #img3, #img4, #img5{
+  float: left;
+  margin-right: 15px;
+}
+
+#img5{
+  height:375px;
+}
+
+#img1{
+  height:275px;
+}
+
+footer{
+  grid-area:e;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+    margin-top:-16px;
+  background-color: #ECE4B7;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.15fr 0.1fr 0.1fr 3fr;
+     grid-template-areas: "a"
+     "b"
+     "c"
+     "d"
+   }
+
+   .container1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.06fr 0.045fr 0.03fr 3fr;
+      grid-template-areas: "a"
+      "b"
+      "c"
+      "d"
+    }
+
+  .cards section{
+    width:100%;
+  }
+
+  .cards2 section{
+    width:100%;
+  }
+
+  .webdesc{
+    display: none;
+  }
+
+  h1{
+    padding-bottom: 17px;
+    text-align: center;
+    background-color: #FCD8C7;
+    font-family: 'Merriweather', serif;
+    font-size: 2.75em;
+  }
+
+  #bio{
+    margin-top:-25px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: -35px;
+  }
+
+  ul{
+      margin-top: -5px;
+  }
+}
