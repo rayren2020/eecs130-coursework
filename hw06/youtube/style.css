@@ -1,0 +1,14 @@
+
+.card{
+  width: 400px;
+  height: 400px;
+  vertical-align: top;
+  border: solid 1px #000;
+  display:inline-block;
+  margin-top: 20px;
+}
+
+iframe{
+  width:400px;
+  height:250px;
+}
