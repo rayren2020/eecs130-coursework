@@ -37,6 +37,10 @@ body{
   width:33.333% ;
 }
 
+#info{
+  padding-top: 5%;
+}
+
 .link{
   display: block;
   height: 1.5em;
@@ -144,5 +148,13 @@ body{
 /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .card section{
+    width:100% ;
+  }
+
+  .card{
+    padding-top: 0px;
   }
 }
