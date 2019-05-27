@@ -51,6 +51,21 @@ body{
   text-decoration: none;
 }
 
+.link2{
+  display:inline;
+  margin-left: 20px;
+  padding:20px 10px 10px 10px;
+  background-color: slateblue;
+  color:white;
+  text-decoration: none;
+  border-style:solid;
+}
+
+nav{
+  margin-top:25px;
+  margin-bottom: 35px;
+}
+
 .about{
   grid-area: b;
 }
@@ -61,6 +76,11 @@ body{
 
 .skills{
   grid-area: d;
+}
+
+.deliverable{
+  width:70%;
+  height: auto;
 }
 
 .timeline{
@@ -156,5 +176,9 @@ body{
 
   .card{
     padding-top: 0px;
+  }
+  .deliverable{
+    width:100%;
+    height: auto;
   }
 }

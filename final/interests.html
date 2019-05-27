@@ -1,0 +1,78 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Interests</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="carousel.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" title=
+    "About Me"  class="link2">About Me</a>
+    <a href="portfolio.html" title=
+    "Projects" class="link2">Project Samples</a>
+    <span class="link2">Interests</span>
+  </nav>
+  <main>
+      <ul class="cards">
+          <li class="card">
+              <div class="image1" style="background-image:url('images/gallery/berlin1.jpg')"></div>
+              <div class="image1" style="background-image:url('images/gallery/berlin2.jpg')"></div>
+              <div class="image1" style="background-image:url('images/gallery/berlin3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image2" style="background-image:url('images/gallery/china1.jpg')"></div>
+              <div class="image2" style="background-image:url('images/gallery/china2.jpg')"></div>
+              <div class="image2" style="background-image:url('images/gallery/china3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image3" style="background-image:url('images/gallery/england1.jpg')"></div>
+              <div class="image3" style="background-image:url('images/gallery/england2.jpg')"></div>
+              <div class="image3" style="background-image:url('images/gallery/england3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image4" style="background-image:url('images/gallery/england4.jpg')"></div>
+              <div class="image4" style="background-image:url('images/gallery/england5.jpg')"></div>
+              <div class="image4" style="background-image:url('images/gallery/england6.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image5" style="background-image:url('images/gallery/food1.jpg')"></div>
+              <div class="image5" style="background-image:url('images/gallery/food2.jpg')"></div>
+              <div class="image5" style="background-image:url('images/gallery/food3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image6" style="background-image:url('images/gallery/la1.jpg')"></div>
+              <div class="image6" style="background-image:url('images/gallery/la2.jpg')"></div>
+              <div class="image6" style="background-image:url('images/gallery/la3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image7" style="background-image:url('images/gallery/wi1.jpg')"></div>
+              <div class="image7" style="background-image:url('images/gallery/wi2.jpg')"></div>
+              <div class="image7" style="background-image:url('images/gallery/wi3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image8" style="background-image:url('images/gallery/canada1.jpg')"></div>
+              <div class="image8" style="background-image:url('images/gallery/canada2.jpg')"></div>
+              <div class="image8" style="background-image:url('images/gallery/canada3.jpg')"></div>
+          </li>
+          <li class="card">
+              <div class="image9" style="background-image:url('images/gallery/ny1.jpg')"></div>
+              <div class="image9" style="background-image:url('images/gallery/ny2.jpg')"></div>
+              <div class="image9" style="background-image:url('images/gallery/ny3.jpg')"></div>
+          </li>
+      </ul>
+
+      <!-- preview panel -->
+      <section class="preview_box">
+          <div class="featured_image" onclick="nextimg()" style="background-image:url('images/berlin1.jpg')"></div>
+          <button class="close" onclick="closeimg()">&times;</button>
+          <button class="prev" onclick="previmg()">&lsaquo;</button>
+          <button class="next" onclick="nextimg()">&rsaquo;</button>
+      </section>
+      <!-- end preview panel -->
+
+  </main>
+  <script type="text/javascript" src="interests.js"></script>
+</body>
