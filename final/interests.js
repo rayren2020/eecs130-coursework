@@ -37,8 +37,6 @@ function animate() {
   slideIndex++;
   if (slideIndex > 3) {slideIndex = 1}
   x1[slideIndex-1].style.display = "block";
-  slideIndex++;
-  if (slideIndex > 3) {slideIndex = 1}
   x2[slideIndex-1].style.display = "block";
   x3[slideIndex-1].style.display = "block";
   x4[slideIndex-1].style.display = "block";
