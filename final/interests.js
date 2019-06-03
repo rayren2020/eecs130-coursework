@@ -75,3 +75,22 @@ const cards = document.querySelectorAll('.image');
  for (image of cards) {
     image.onclick = showPhoto;
 }
+
+function closeimg() {
+  console.log("closes");
+  document.querySelector(".preview_box").classList.remove("active");
+}
+
+function nextimg(){
+  let newimgurl=currentimgelement.parentNode.nextElementSibling.firstElementChild.style.backgroundImage;
+  console.log(currentimgelement.parentNode.nextElementSibling.firstElementChild.style.backgroundImage);
+  document.querySelector(".featured_image").style.backgroundImage=newimgurl;
+  currentimgelement=currentimgelement.parentNode.nextElementSibling.firstElementChild;
+}
+
+function previmg(){
+  let  newimgurl2=currentimgelement.parentNode.previousElementSibling.firstElementChild.style.backgroundImage;
+  console.log(currentimgelement.parentNode.previousElementSibling.firstElementChild.style.backgroundImage);
+    document.querySelector(".featured_image").style.backgroundImage=newimgurl2;
+    currentimgelement=currentimgelement.parentNode.previousElementSibling.firstElementChild;
+}

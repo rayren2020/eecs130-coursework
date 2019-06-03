@@ -23,6 +23,13 @@ body * {
     padding-right: 20px;
 }
 
+figcaption{
+   position: relative;
+   bottom: -92%;
+   color: white;
+   font-size: 1.1em;
+}
+
 .image1, .image2,.image3,.image4,.image5,.image6,.image7,.image8,.image9 {
     background-size: cover;
     background-position: center;
