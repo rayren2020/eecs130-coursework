@@ -81,6 +81,7 @@ nav{
 .deliverable{
   width:70%;
   height: auto;
+  margin-left: 15%;
 }
 
 .timeline{
@@ -144,6 +145,13 @@ nav{
 
 .left::after{
   right:-15px;
+}
+
+.project{
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 50px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
