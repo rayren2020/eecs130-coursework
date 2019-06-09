@@ -84,6 +84,7 @@ nav{
   margin-left: 15%;
 }
 
+
 .timeline{
   position: relative;
   max-width: 900px;
@@ -188,5 +189,12 @@ nav{
   .deliverable{
     width:100%;
     height: auto;
+    margin-left: 0;
+  }
+  .project{
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 50px;
   }
 }
